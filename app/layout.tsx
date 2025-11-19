@@ -1,12 +1,14 @@
+import "./globals.css";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next"
 import { Poppins } from "next/font/google";
 import { Toaster } from "sonner";
-import "./globals.css";
+
 import {
   ClerkProvider
 
 } from "@clerk/nextjs";
-import { Analytics } from "@vercel/analytics/next"
+
 
 const poppins = Poppins({
   variable: "--font-poppins",
