@@ -20,7 +20,7 @@ import {
 import { CURRENCY_LIST, type CurrencyCode } from "@/lib/utils/currencies";
 import { updateUserCurrency } from "@/actions/userActions";
 import { toast } from "sonner";
-import { DollarSign } from "lucide-react";
+
 
 interface CurrencySelectorProps {
   currentCurrency: CurrencyCode;
@@ -56,7 +56,7 @@ export function CurrencySelector({ currentCurrency }: CurrencySelectorProps) {
           size="sm"
           className="gap-2 hover:bg-primary/10"
         >
-          <DollarSign className="h-4 w-4" />
+       
           <span className="hidden sm:inline">{currentCurrencyInfo?.symbol}</span>
           <span className="text-xs text-muted-foreground hidden md:inline">
             {currentCurrencyInfo?.code}
@@ -66,7 +66,7 @@ export function CurrencySelector({ currentCurrency }: CurrencySelectorProps) {
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
-            <DollarSign className="h-5 w-5 text-primary" />
+   
             Cambiar Moneda
           </DialogTitle>
           <DialogDescription>

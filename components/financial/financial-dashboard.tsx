@@ -31,6 +31,7 @@ import type {
   VariableExpense,
   UserWithCurrency,
 } from "@/types";
+import Image from "next/image";
 
 interface FinancialDashboardProps {
   initialData: MonthlyData;
@@ -195,11 +196,7 @@ export function FinancialDashboard({
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-xl">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-8">
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary">
-              <span className="text-lg font-bold text-primary-foreground">
-                ₡
-              </span>
-            </div>
+            <Image alt="Logo" src="/logo.png" width={40} height={40} />
             <div>
               <h1 className="text-xl font-bold text-foreground">FinanzApp</h1>
               <p className="text-xs text-muted-foreground hidden sm:block">
