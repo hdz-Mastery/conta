@@ -13,7 +13,6 @@ import {
   PieChart,
   Wallet,
   CheckCircle2,
-  Moon,
 } from "lucide-react";
 
 export default function Home() {
@@ -35,14 +34,9 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-3">
-            <Link href="/login">
+            <Link href="/sign-in">
               <Button variant="ghost" className="hidden sm:inline-flex">
                 Iniciar Sesión
-              </Button>
-            </Link>
-            <Link href="/register">
-              <Button className="shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all">
-                Comenzar Gratis
               </Button>
             </Link>
           </div>
@@ -79,31 +73,6 @@ export default function Home() {
               . Dashboard intuitivo con análisis automático de tu salud
               financiera.
             </p>
-
-            <div
-              className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in slide-in-from-bottom-4 duration-700"
-              style={{ animationDelay: "300ms" }}
-            >
-              <Link href="/register">
-                <Button
-                  size="lg"
-                  className="w-full sm:w-auto h-12 px-8 text-base shadow-2xl shadow-primary/30 hover:shadow-primary/40 hover:scale-105 transition-all"
-                >
-                  Comenzar Gratis
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link href="/login">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="w-full sm:w-auto h-12 px-8 text-base hover:bg-primary/5"
-                >
-                  <Zap className="mr-2 h-5 w-5" />
-                  Ver Demo en Vivo
-                </Button>
-              </Link>
-            </div>
 
             <div
               className="flex items-center justify-center gap-8 pt-8 text-sm text-muted-foreground animate-in fade-in duration-700"
@@ -189,12 +158,7 @@ export default function Home() {
               description="Interfaz animada estilo anime con transiciones suaves y responsive design"
               color="from-yellow-500 to-orange-500"
             />
-            <FeatureCard
-              icon={<Moon className="h-10 w-10" />}
-              title="Dark Mode"
-              description="Cambia entre modo claro y oscuro con un clic, diseñado para comodidad"
-              color="from-slate-500 to-slate-700"
-            />
+
           </div>
 
           {/* Analysis Section */}
@@ -325,7 +289,7 @@ export default function Home() {
               control de sus finanzas
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link href="/register">
+              <Link href="/sign-in">
                 <Button
                   size="lg"
                   className="w-full sm:w-auto h-12 px-8 text-base shadow-2xl shadow-primary/40 hover:shadow-primary/50 hover:scale-105 transition-all"
@@ -334,15 +298,7 @@ export default function Home() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Link href="/login">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="w-full sm:w-auto h-12 px-8 text-base"
-                >
-                  Ya tengo cuenta
-                </Button>
-              </Link>
+
             </div>
 
             <div className="pt-8 flex items-center justify-center gap-12 text-center">
@@ -408,14 +364,6 @@ export default function Home() {
                     className="hover:text-foreground transition-colors"
                   >
                     Precios
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/login"
-                    className="hover:text-foreground transition-colors"
-                  >
-                    Demo
                   </Link>
                 </li>
               </ul>
